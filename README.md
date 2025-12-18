@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+# TranslatePro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**TranslatePro** — простой, быстрый и современный переводчик на базе React и TypeScript.  
+Использует мощные AI-модели (в данный момент GROQ, с планируемой поддержкой GPT-4), чтобы обеспечивать качественный перевод с учетом контекста и культурных особенностей.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Что это такое
 
-## React Compiler
+TranslatePro — это приложение-переводчик нового поколения, которое сочетает **простоту интерфейса с профессиональными возможностями** перевода. Оно идеально подходит как для повседневного использования, так и для задач, требующих точного и корректного перевода.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 💡 Основные возможности
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Приложение предоставляет широкий набор функций для удобной и качественной работы с текстом:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🔹 Мгновенный перевод  
+Получайте результаты за секунды благодаря мощным AI-моделям.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 🌍 Поддержка 18+ языков  
+Поддерживаются основные языки мира, включая редкие и региональные диалекты.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🔤 Фонетическая транскрипция  
+Узнавайте, как правильно произносить переведенный текст на любом языке.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🔒 Безопасность данных  
+Ваши тексты защищены и **не используются** для обучения моделей или передачи третьим лицам.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 📚 Контекстный перевод  
+Учитываются контекст и культурные особенности для максимально точного результата.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 📈 Постоянное улучшение  
+Модели регулярно обновляются, чтобы повышать качество и точность переводов.
+
+---
+
+## 🛠 Технологии
+
+Проект построен с использованием:
+
+- **React** — современная библиотека для создания интерфейсов.
+- **TypeScript** — типизация для безопасности и удобства разработки.
+- **AI-модели** — GROQ для перевода сегодня, GPT-4 — планируемая поддержка.
